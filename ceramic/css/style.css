@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* reset */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+.inner {width: 1200px; margin: 0 auto;}
+
+/* header */
+header {height: 150px;}
+.logo {width: 200px; height: 100px; float: left;}
+
+.other {width: 1000px; height: 100px; float: left;}
+.other ul {display: flex; float: right; margin-top: 50px;}
+.other li {width: 75px; text-align: center; font-size: 12px;}
+.other li:first-child {position: relative; width: 200px;}
+.other input {height: 25px; border: 1px solid brown; border-radius: 10px;}
+.other i {position: absolute; top: 7.5px; right: 25px;}
+.other li:not(:first-child) {padding-top: 2.5px;}
+.other li:hover {text-decoration: underline;}
+
+.menu {clear: both; width: 1200px; height: 50px; position: relative; z-index: 15;}
+.menu > ul {display: flex;}
+.menu > ul > li {width: calc(100% / 9); text-align: center;}
+.menu > ul > li > a {display: block; line-height: 50px;}
+.menu > ul > li > a:hover {color: brown; text-decoration: underline;}
+.submenu {height: 250px; background-color: rgba(0, 0, 0, .5); display: none; color: white; opacity: 0.75;}
+.submenu.first {border-radius: 0 0 0 15px;}
+.submenu.last {border-radius: 0 0 15px 0;}
+.submenu li {width: 100%; line-height: 50px;}
+.submenu li.small {font-size: 12px;}
+.submenu li a {display: block; width: 100%; height: 100%;}
+.submenu li a:hover {background-color: burlywood; text-decoration: underline;}
+
+/* top */
+.yourceramic {position: relative; height: 500px;}
+.yourceramic p {position: absolute; color: white; text-align: center;}
+.yourceramic p:first-child {width: 500px; top: 55%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; border-top: 1px solid white;}
+.yourceramic p:nth-child(2) {top: 75%; left: 50%; transform: translate(-50%, -50%); font-size: 14px;}
+
+/* con1 */
+.con1box {display: flex; height: 500px; background-color: rgba(222, 184, 135, .25);}
+.ceramicplay {width: 25%; position: relative;}
+.ceramicplay p:first-child {position: absolute; top: 40%; left: 10%; font-size: 14px;}
+.ceramicplay p:nth-child(2) {position: absolute; top: 50%; left: 10%; font-size: 18px;}
+.playbox {width: 25%; position: relative;}
+.playbox p:first-child {position: absolute; top: 10%; left: 10%; font-size: 50px; color: brown; font-family: "Playfair Display", serif;}
+.playbox p:nth-child(2) {position: absolute; top: 35%; left: 10%; font-size: 24px;}
+.playbox p:nth-child(3) {position: absolute; top: 45%; left: 10%; font-size: 12px;}
+.playbox p:nth-child(3):hover {text-decoration: underline;}
+.playbox img {position: absolute; top: 60%; left: 10%; transition: .5s;}
+.playbox img:hover {opacity: 0.5;}
+
+/* con2 */
+.con2box {height: 400px; position: relative; overflow: hidden;}
+.con2box p:first-child {position: absolute; top: 50%; left: -20%; font-size: 50px; color: brown; font-family: "Playfair Display", serif;}
+.con2box p:nth-child(2) {position: absolute; top: 70%; left: -20%;}
+
+/* con3 */
+.con3 {height: 750px;}
+.con3 > p {text-align: center;}
+.con3 > p:first-child {font-size: 50px; padding-top: 50px; width: 500px; border-bottom: 1px solid black; margin: 0 auto; font-family: "Playfair Display", serif;}
+.con3 > p:nth-child(2) {padding-top: 25px; padding-bottom: 75px; font-size: 14px;}
+.ceramictools {display: flex;}
+.tools {padding: 0 25px;}
+.tools p:nth-child(2) {padding-top: 25px;}
+.tools p:nth-child(3) {padding: 15px 0; text-decoration: line-through;}
+.tools p:nth-child(4) {font-weight: bold;}
+.tools span {color: darkcyan;}
+
+/* con4 */
+.con4box {height: 400px; position: relative; overflow: hidden;}
+.con4box p:first-child {position: absolute; top: 10%; right: -25%; font-size: 32px; color: crimson; font-weight: bold;}
+.con4box p:nth-child(2) {position: absolute; top: 25%; right: -25%; color: white; text-align: right;}
+
+/* con5 */
+.con5 {height: 750px;}
+.con5 > p {text-align: center; color: crimson;}
+.con5 > p:first-child {font-size: 50px; padding-top: 50px; width: 500px; border-bottom: 1px solid crimson; margin: 0 auto; font-family: "Playfair Display", serif;}
+.con5 > p:nth-child(2) {padding-top: 15px; padding-bottom: 75px;}
+.ceramicpaint {display: flex;}
+.paint {text-align: center;}
+.p1 {padding-right: 47.5px;}
+.p2 {padding-right: 45px;}
+.p3 {padding-right: 47.5px;}
+.paint p:nth-child(2) {padding-top: 25px;}
+.paint p:nth-child(3) {padding-top: 25px; font-weight: bold;}
+
+/* con6 */
+.con6box {height: 400px; position: relative; color: white;}
+.con6box p:first-child {position: absolute; top: 15%; left: 5%; font-size: 24px;}
+.con6box p:nth-child(2) {position: absolute; top: 30%; left: 5%;}
+
+/* con7 */
+.con7 {height: 1350px;}
+.ceramicteaset {padding: 125px;}
+.teaset {display: flex; height: 500px;}
+.t1 {padding-bottom: 100px;}
+.teatext {width: 500px; height: 500px;}
+.t1 .teatext {padding-right: 100px;}
+.t2 .teatext {padding-left: 100px;}
+.teatext p:first-child {font-size: 32px; padding-top: 75px; padding-bottom: 25px;}
+
+/* footer */
+footer {height: 325px; font-size: 12px;}
+footer .inner {height: 325px; background-color: rgba(222, 184, 135, .25);}
+.footerwrap {display: flex; padding-top: 25px;}
+.footerleft {padding-left: 100px; width: 500px; height: 250px;}
+.footerbutton {display: flex;}
+.footerbutton p:nth-child(2) {padding-left: 25px;}
+.footerbutton.top p:first-child {width: 125px; height: 50px; padding-bottom: 15px;}
+.footerbutton.top p:first-child span {font-weight: bold; font-size: 14px;}
+.footerbutton a {display: block; width: 125px; height: 50px; line-height: 50px; text-align: center; border-radius: 15px; background-color: rgba(222, 184, 135, .5);}
+.footerbutton.center {padding: 10px 0;}
+
+.footerright {padding-right: 100px; width: 500px; height: 250px;}
+.footerright ul {float: right; padding-bottom: 50px;}
+.footerright ul li {float: left;}
+.footerright ul li a {display: block; width: 75px; text-align: center;}
+.footerright ul li:nth-child(3) a {width: 125px;}
+.footerright ul li a:hover {text-decoration: underline;}
+.footerright p:nth-child(2) {clear: both;}
+.footerright p {padding-bottom: 7.5px;}
+.footerright p span {float: right;}
+.footerright p span a {display: block; padding: 2.5px 15px; background-color: silver; border-radius: 5px;}
+.footerright p span a:hover {text-decoration: underline;}
+.footerright p:nth-child(8) {clear: both; text-align: center;}
