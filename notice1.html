@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+    html {height: 100%;}
+    body {position: relative; height: 100%; background-color: rgba(204, 204, 204, .5);}
+    * {margin: 0; padding: 0;}
+
+    #wrap {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 900px; height: 500px;}
+    #wrap .top {display: flex; height: 500px;}
+    #wrap .top .top-left {margin-top: 25px; width: 400px;}
+    #wrap .top .top-left h1 {font-size: 20px;}
+    #wrap .top .top-left h1 span {font-family: "Playfair Display", serif; font-size: 28px;}
+    #wrap .top .top-left p.example {font-size: 12px; padding-top: 15px;}
+    #wrap .top .top-left h2 {font-family: "Playfair Display", serif; font-size: 24px; padding-top: 30px;}
+    #wrap .top .top-left p.overview {font-size: 14px; padding-top: 15px; line-height: 1.5;}
+    #wrap .top .top-left .colorpalette {margin-top: 5px; padding: 10px; border-radius: 10px; width: 100px; box-sizing: border-box; background-color: white;}
+    #wrap .top .top-left p.color {font-size: 14px;}
+    #wrap .top .top-left p.color1 {color: #a52a2a;}
+    #wrap .top .top-left p.color2 {color: #cc9966; padding: 5px 0;}
+    #wrap .top .top-left p.color3 {color: #a52a2abf;}
+    #wrap .top .top-left .buttonwrap {display: flex; gap: 10px; margin-top: 15px;}
+    #wrap .top .top-left a {display: block; width: 75px; height: 30px; border-radius: 15px; background-color: #B6C7AA; font-size: 14px; text-decoration: none; line-height: 30px; text-align: center; color: inherit;}
+    #wrap .top .top-left a:hover {text-decoration: underline;}
+    #wrap .top .top-left button {width: 75px; height: 30px; border: none; border-radius: 15px; background-color: #B6C7AA;}
+    #wrap .top .top-left button:hover {text-decoration: underline; color: red;}
+    #wrap .top .top-right {margin-left: 50px;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="top">
+      <div class="top-left">
+        <h1><span>Dreampuppy</span> (미유펫 대전점)</h1>
+        <p class="example">- 1인 작업, 반응형 사이트
+          <br>- Html, Css, Javascript, JQuery</p>
+        <h2>concept</h2>
+        <p class="overview">기존 미유펫 대전점 메인페이지의 사진과 글씨로 이루어진 배너를 더 알아보기 쉬운 아이콘으로 개편하고, 강아지와 고양이의 사진만 있는 목록에서 홍보용 설명까지 같이 볼 수 있는 목록으로 재구성하였습니다. 대형 노트북부터 소형 휴대기기까지 다양한 브라우저에서 목록으로 볼 수 있도록 작업했습니다.</p>
+        <h2>color</h2>
+        <div class="colorpalette">
+          <p class="color color1">#a52a2a</p>
+          <p class="color color2">#cc9966</p>
+          <p class="color color3">#a52a2abf</p>
+        </div>
+        <div class="buttonwrap">
+          <a href="./dreampuppy/index.html" target="_blank">바로가기</a>
+          <button onclick="window.close()">닫기</button>
+        </div>
+      </div>
+      <div class="top-right">
+        <img src="./images/dreampuppy-notice.png" alt="dreampuppy">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- <a href="./dreampuppy/index.html" target="_blank">1</a>
+<a href="./Mimimong/index.html" target="_blank">2</a>
+<a href="./ceramic/index.html" target="_blank">3</a>
+<a href="./Pinterest/index.html" target="_blank">4</a>
+<a href="https://ysj0211.github.io/applestore/" target="_blank">5</a>
+<a href="https://ysj0211.github.io/starbucks_korea/" target="_blank">6</a>
+<a href="https://ysj0211.github.io/emotion_react/" target="_blank">7</a> -->
